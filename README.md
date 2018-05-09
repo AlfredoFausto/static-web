@@ -1,2 +1,2 @@
-# static-web
-New static web demo
+# staticweb
+test for jenkins build

@@ -1,4 +1,4 @@
-- hosts: localhost
+- hosts: tag_Environment_Development
 
   tasks:
     - name: install apache
@@ -6,7 +6,7 @@
 
     - name: configure static web page
       copy: 
-        src: /home/ec2-user/static-web/
+        src: /var/lib/jenkins/workspace/development-deploy/static-web/
         dest: /var/www/html/
         owner: root
         group: root

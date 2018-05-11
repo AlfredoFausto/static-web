@@ -1,0 +1,16 @@
+- hosts: localhost
+
+  tasks:
+    - name: install apache
+      yum: name=httpd state=present
+
+    - name: configure static web page
+      copy: 
+        src: /home/ec2-user/static-web-1/
+        dest: /var/www/html/
+        owner: root
+        group: root
+        mode: 0644
+
+    - name: restart apache
+      service: name=httpd state=restarted

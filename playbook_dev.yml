@@ -6,7 +6,7 @@
 
     - name: configure static web page
       copy: 
-        src: /var/lib/jenkins/workspace/development-deploy/static-web/
+        src: /var/lib/jenkins/workspace/development-deploy/
         dest: /var/www/html/
         owner: root
         group: root
